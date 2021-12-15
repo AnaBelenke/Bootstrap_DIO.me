@@ -1,38 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap</title>
-    <link rel="stylesheet" type="text/css" href="./Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+  </head>
 
-</head>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="a">
+        <h2 id="style-h2-header">Minha página em Bootstrap</h2>
+      </a>
+      <img id="img-header" src="./IMG/1.jpg" alt="Imagem cabeçalho" />
 
-<body>
-    <button type="button" class="btn btn-primary"> Primary </button>
-</body>
-
-<nav class="navbar navbar-expand-lg navbar-light"> 
-    <a class="navbar-brand" href="a"> Minha página em Bootstrap </a>
-    <img src="./IMG/1.jpg" alt="Imagem cabeçalho" width="50%" height="50%">
-
-    <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="a">quem somos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="a">Parceiros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="a">Serviços</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="a">Quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="a">Parceiros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="a">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="a">Contato</a>
+          </li>
         </ul>
-    </div>
-</nav>
+      </div>
+    </nav>
+  </header>
 
+  <body>
+    <section class="quem-somos">
+      <div class="container-fluid quem-somos">
+        <h2>Quem somos</h2>
+        <img
+          id="img-quem-somos"
+          src="./IMG/4.jpg"
+          class="rounded-circle"
+          alt="Quem somos"
+        />
+        <h3>Somos um time comprometido com seus rendimentos!</h3>
+      </div>
+    </section>
+
+    <selection id="parceiros">
+      <div class="container-fluid text-center parceiros">
+        <h2>Parceiros</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="./IMG/logo-footer.png" />
+            </div>
+            <div class="col-lg-4">
+              <img src="./IMG/logo-footer.png" />
+            </div>
+            <div class="col-lg-4">
+              <img src="./IMG/logo-footer.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </selection>
+
+    <selection id="servicos">
+      <div class="container-fluid text-center servicos">
+        <h2>Serviços</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="./IMG/6.jpg" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                ornare posuere ipsum id mattis. Aenean auctor turpis in turpis
+                malesuada, ac posuere lectus euismod. Maecenas imperdiet leo non
+                mattis volutpat.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img src="./IMG/5.jpg" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                ornare posuere ipsum id mattis. Aenean auctor turpis in turpis
+                malesuada, ac posuere lectus euismod. Maecenas imperdiet leo non
+                mattis volutpat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </selection>
+
+    <footer class="footer">
+        <p> Desenvolvido por Ana Belenke </p>
+    </footer>
+  </body>
 </html>
